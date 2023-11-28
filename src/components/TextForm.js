@@ -36,10 +36,10 @@ const TextForm = (props) => {
         <textarea className="form-control" style={{ backgroundColor:props.mode==='dark'?'rgb(0 88 116)':'white' ,color: props.mode==='dark'?'white':'black'}} value={text} onChange={handleOnChange} id="my-box" placeholder='Enter text here' rows="8"></textarea>
     </div>
     
-    <button disabled={text.length===0} className="btn btn-primary mx-1" onClick={toLowercase}>Convert To Lowercase</button>
-    <button disabled={text.length===0} className="btn btn-primary mx-1" onClick={toUpercase} >Convert To Upercase</button>
-    <button disabled={text.length===0} className="btn btn-primary mx-1" onClick={copyText}>Copy Text</button>
-    <button disabled={text.length===0} className="btn btn-primary mx-1" onClick={clearText}>Clear Text</button>
+    <button disabled={text.length===0} className="btn btn-primary mx-1 my-2" onClick={toUpercase} >Convert To Upercase</button>
+    <button disabled={text.length===0} className="btn btn-primary mx-1 my-2" onClick={copyText}>Copy Text</button>
+    <button disabled={text.length===0} className="btn btn-primary mx-1 my-2" onClick={toLowercase}>Convert To Lowercase</button>
+    <button disabled={text.length===0} className="btn btn-primary mx-1 my-2" onClick={clearText}>Clear Text</button>
     </div>
     <div className="container" style={{color:props.mode==='dark'?'white':'grey'}} >    
         <h2>Length of text</h2>
